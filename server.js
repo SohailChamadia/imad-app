@@ -21,6 +21,10 @@ app.get('/ui/login.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'login.css'));
 });
 
+app.get('/ui/login.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'login.css'));
+});
+
 app.get('/ui/register.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'register.html'));
 });
