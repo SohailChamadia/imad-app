@@ -13,6 +13,10 @@ app.get('/Education-DataBoard/index.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'Education-DataBoard', 'index.html'));
 });
 
+app.post('/Education-DataBoard/index.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'index.html'));
+});
+
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
@@ -38,6 +42,10 @@ app.get('/Education-DataBoard/newvideo.html', function (req, res) {
 });
 
 app.post('/Education-DataBoard/student_dashboard.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'student_dashboard.html'));
+});
+
+app.get('/Education-DataBoard/student_dashboard.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'Education-DataBoard', 'student_dashboard.html'));
 });
 
