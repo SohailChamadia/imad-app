@@ -14,7 +14,7 @@ body {
 }
 
 .panel-login>.panel-heading {
-	color: #00415d;
+	color: #fff;
 	background-color: #000000;
 	border-color: #fff;
 	text-align:center;
@@ -99,6 +99,25 @@ body {
 }
 .btn-register:hover,
 .btn-register:focus {
+	color: #fff;
+	background-color: #a6a6a6;
+	border-color: #a6a6a6;
+}
+
+.btn-select {
+	background-color: #f2f2f2;
+	outline: inherit;
+	color: #000000;
+	font-size: 35px;
+	height: 170px;
+  width: 240px;
+	font-weight: bold;
+	padding: 14px 0;
+	text-transform: uppercase;
+	border-color: #1CB94A;
+}
+.btn-select:hover,
+.btn-select:focus {
 	color: #fff;
 	background-color: #a6a6a6;
 	border-color: #a6a6a6;

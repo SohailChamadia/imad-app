@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<title>Education-DataBoard/newvideo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b>Education DataBoard</b></a>
+    </div>
+    <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search" id="search">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <form class="navbar-form navbar-right">
+      <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+            <i class="glyphicon glyphicon-user"></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="C:\Users\VATSAL\Documents\Education-DataBoard\index.html"><span class="glyphicon glyphicon-log-out w3-margin-right"></span>Log Out</a></li>
+          </ul>
+      </div>
+    </form>
+    <form class="navbar-form navbar-right">
+      <div class="dropdown">
+          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+          <i class="glyphicon glyphicon-bell"></i>
+          <span class="badge">1</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="#">
+              <div class="row">
+                <div class="media">
+                  <div class="media-left">
+                    <iframe width="150" height="100" src="https://www.youtube.com/embed/YErMG9Kyf9Y" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                  <div class="media-body">
+                    <h4 class="media-heading">Image Processing Semester 7</h4>
+                    <p>Sarvajanik College of Engineering and Technology</p>
+                  </div>
+                </div>
+              </div>
+            </a></li>
+          </ul>
+      </div>
+    </form>
+  </div>
+</nav>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <hr><hr>
+    <img src="C:\Users\VATSAL\Documents\Education-DataBoard\user.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>Gotawala Vatsal</b></h4>
+    <p class="w3-text-grey">Sarvajanik College of Engineering and Technology</p>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="glyphicon glyphicon-home w3-margin-right"></i></i>HOME</a>
+    <a href="#popular" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-fire w3-margin-right"></i>POPULAR</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="glyphicon glyphicon-cog w3-margin-right"></i></i>SETTINGS</a>
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="home">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+      <hr><hr>
+    <div class="w3-section w3-bottombar w3-padding-16">
+      <span class="w3-margin-right">Filter:</span>
+      <button class="w3-button w3-black">All</button>
+      <button class="w3-button w3-white">Institute Specific</button>
+      <button class="w3-button w3-white w3-hide-small">Topic Specific</button>
+      <button class="w3-button w3-white w3-hide-small"></i>Subject Specific</button>
+    </div>
+    </div>
+  </header>
+
+  <!-- First Video Grid-->
+  <div class="container">
+    <hr><hr>
+    <div class="row">
+      <h5><b>Recently Uploaded</b></h5>
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/7VknjDsVxgU" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Bubble Sort</h4>
+          <p>Topics : Bubble Sort Algorithm, code</p>
+          <p>by Gate Book</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/YErMG9Kyf9Y" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Image Processing Semester 7</h4>
+          <p>Topics : Fourier Transform, Filtering in Frequency Domain</p>
+          <p>by Prof. Dhatri Pandya</p>
+          <p>Sarvajanik College of Engineering and Technology</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/WccZQSERfCM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Compiler Design Lecture2</h4>
+          <p>Topics : Lexical Analyser and Grammars</p>
+          <p>by Ravindrababu Ravula</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/L3LMbpZIKhQ" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Mathematics for Computer Science</h4>
+          <p>Topics : Introduction and proofs</p>
+          <p>by Tom Leighton</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/4zahvcJ9glg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">RSA Encryption Algorithm</h4>
+          <p>Topics : RSA Encryption Example</p>
+          <p>by Eddie Woo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/y__uzGKmxt8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">3D Modelling in Blender for beginners</h4>
+          <p>Topics : Using blender for designing 3D objects</p>
+          <p>by tutor4u</p>
+        </div>
+      </div>
+    </div>
+
+</div>
+
+  <!-- Second Video Grid-->
+  <div class="container" id="popular">
+    <hr><hr>
+    <div class="row">
+      <h5><b>Popular</b></h5>
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/YErMG9Kyf9Y" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Image Processing Semester 7</h4>
+          <p>Topics : Fourier Transform, Filtering in Frequency Domain</p>
+          <p>by Prof. Dhatri Pandya</p>
+          <p>Sarvajanik College of Engineering and Technology</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/WccZQSERfCM" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">Compiler Design Lecture2</h4>
+          <p>Topics : Lexical Analyser and Grammars</p>
+          <p>by Ravindrababu Ravula</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/4zahvcJ9glg" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">RSA Encryption Algorithm</h4>
+          <p>Topics : RSA Encryption Example</p>
+          <p>by Eddie Woo</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <hr>
+    </div>
+
+    <div class="row">
+      <div class="media">
+        <div class="media-left">
+          <iframe width="250" height="125" src="https://www.youtube.com/embed/y__uzGKmxt8" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">3D Modelling in Blender for beginners</h4>
+          <p>Topics : Using blender for designing 3D objects</p>
+          <p>by tutor4u</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
