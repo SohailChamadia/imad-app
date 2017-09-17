@@ -6,7 +6,7 @@ var app = express();
 app.use(morgan('combined'));
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'index.html'));
 });
 
 app.get('/ui/style.css', function (req, res) {
@@ -17,21 +17,21 @@ app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/login.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'login.css'));
+app.get('/Education-DataBoard/login.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'login.css'));
 });
 
-app.get('/ui/register.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'register.html'));
+app.get('/Education-DataBoard/register.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'register.html'));
 });
 
 
-app.get('/ui/login.css', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'login.css'));
+app.get('/Education-DataBoard/login.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'login.css'));
 });
 
-app.get('/ui/newvideo.html', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'newvideo.html'));
+app.get('/Education-DataBoard/newvideo.html', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'newvideo.html'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
