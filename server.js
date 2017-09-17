@@ -25,7 +25,6 @@ app.get('/Education-DataBoard/register.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'Education-DataBoard', 'register.html'));
 });
 
-
 app.get('/Education-DataBoard/login.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'Education-DataBoard', 'login.css'));
 });
@@ -36,6 +35,10 @@ app.get('/Education-DataBoard/newvideo.html', function (req, res) {
 
 app.post('/Education-DataBoard/student_dashboard.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'Education-DataBoard', 'student_dashboard.html'));
+});
+
+app.post('/Education-DataBoard/user.jpg', function (req, res) {
+  res.sendFile(path.join(__dirname, 'Education-DataBoard', 'user.jpg'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
