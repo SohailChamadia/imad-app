@@ -34,7 +34,7 @@ app.get('/Education-DataBoard/newvideo.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'Education-DataBoard', 'newvideo.html'));
 });
 
-app.get('/Education-DataBoard/student_dashboard.html', function (req, res) {
+app.post('/Education-DataBoard/student_dashboard.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'Education-DataBoard', 'student_dashboard.html'));
 });
 
